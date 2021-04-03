@@ -1,0 +1,25 @@
+$card-color: #E2E5EF;
+
+.card    {
+  float: left;
+  width: 350px;
+  height: 260px;
+  border-radius: 25px;
+  background-color: $card-color;
+  margin-bottom: 30px;
+}
+
+.card h4    {
+  float: left;
+
+}
+
+.card .stat {
+  float: left;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  color: #555555;
+}

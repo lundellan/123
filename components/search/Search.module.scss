@@ -1,0 +1,21 @@
+$searchbar-color: #eaeaea;
+
+.searchbar input {
+  float: left;
+  background-color: $searchbar-color;
+  border: 0;
+  width: 316px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 17px;
+  font-size: 22px;
+  font-family: inter, sans-serif;
+  font-weight: 600;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.searchbar input:focus  {
+  outline: 0;
+}

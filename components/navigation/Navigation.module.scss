@@ -1,0 +1,32 @@
+$nav-button-color: #e0e0e0;
+
+.container  {
+  float: left;
+  width: 100px;
+  position: relative;
+  height: 1px;
+}
+
+.navigation {
+  position: fixed;
+  top: 50px;
+  width: 100px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.logo {
+  width: 66px;
+  margin: -4px 0 30px -4px;
+}
+
+.navigation a   {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: $nav-button-color;
+  display: flex;
+  justify-content: center;
+}
