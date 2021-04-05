@@ -1,17 +1,23 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import ArticleCard from '../components/articleCard/articleCard'
 import styles from './Home.module.scss'
+
+import Search from '../components/search/search'
+import ArticleCard from '../components/cards/articleCard'
+
+const pageTitle = "Home"
+const pageLink = "/"
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>Home | Topping</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <div>
+        <Search pageTitle={pageTitle} link={pageLink}/>
 
         <div className={styles.colLeft}>
           <ArticleCard />
@@ -31,7 +37,7 @@ export default function Home() {
           <ArticleCard />
           <ArticleCard />
         </div>
-      </main>
+      </div>
     </div>
   )
 }

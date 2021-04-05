@@ -10,7 +10,7 @@ const iconSizeProfile = 50
 export default function Navigation() {
   return (
     <div className={styles.container}>
-      <div className={styles.navigation}>
+      <nav className={styles.navigation}>
         <Link href="/">
           <div className={styles.logo}>
             <Image
@@ -35,7 +35,7 @@ export default function Navigation() {
           </a>
         </Link>
 
-        <Link href="/">
+        {/* <Link href="/">
           <a>
             <Image
               src="/images/team.svg"
@@ -45,7 +45,7 @@ export default function Navigation() {
               draggable="false"
             />
           </a>
-        </Link>
+        </Link> */}
 
         <Link href="/">
           <a>
@@ -82,7 +82,7 @@ export default function Navigation() {
             />
           </a>
         </Link>
-      </div>
+      </nav>
     </div>
   )
 }

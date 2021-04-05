@@ -1,6 +1,23 @@
 $searchbar-color: #eaeaea;
 
-.searchbar input {
+.searchSection  {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.searchSection a {
+  float: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 50px;
+  color: #000000;
+  margin-right: 20px;
+}
+
+.searchSection input {
   float: left;
   background-color: $searchbar-color;
   border: 0;
@@ -16,6 +33,10 @@ $searchbar-color: #eaeaea;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.searchbar input:focus  {
+.searchSection input:focus  {
   outline: 0;
+}
+
+.searchSection input[type="search"]::-webkit-search-cancel-button {
+  display: none;
 }

@@ -1,38 +1,87 @@
+$primary-color: #2348C2;
+$number-color: #ffffff;
+
+$title-color: #000000;
+$text-color: #666666;
+
 .article    {
   float: left;
   width: calc(100% - 350px);
   padding-right: 50px;
 }
 
+.wallpaper  {
+  float: left;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  position: relative;
+  margin: 0 0 25px 0;
+}
+
+.number {
+  float: left;
+  width: 85px;
+  height: 85px;
+  background: $primary-color;
+  border-radius: 100px;
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.25);
+  margin: 0 0 25px 0;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 85px;
+  text-align: center;
+  color: $number-color;
+}
+
 .article h1  {
   float: left;
   font-size: 46px;
   line-height: 56px;
-  margin: 0;
+  margin: -7px 0 25px 0;
   padding: 0;
-  font-family: inter, sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 600;
-  color: #000000;
+  color: $title-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.article h2 {
+  float: left;
+  width: 100%;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 52px;
+  color: $title-color;
+  margin: 0 0 25px 0;
 }
 
 .article p  {
   float: left;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 30px;
-  color: #666666;
+  color: $text-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 20px 0 0 0;
+  margin: 0 0 25px 0;
+}
+
+.intro, .entry  {
+  float: left;
+  margin-bottom: 50px;
 }
 
 .related  {
   float: left;
-  margin-top: -100px;
   display: flex;
   flex: 1;
   flex-direction: column;

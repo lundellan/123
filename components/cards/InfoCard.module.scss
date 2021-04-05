@@ -1,0 +1,51 @@
+$info-card-color: #f0f0f0;
+$info-card-color-hover: #eaeaea;
+
+$related-content-width: 350px;
+$card-width: calc($related-content-width - 40px);
+
+.card    {
+  float: left;
+  width: $card-width;
+  padding: 22px 20px;
+  border-radius: 15px;
+  background-color: $info-card-color;
+  margin-bottom: 30px;
+}
+
+.card:hover  {
+  background-color: $info-card-color-hover;
+}
+
+.image  {
+  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #cccccc;
+  margin-right: 15px;
+}
+
+.card h4    {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stat {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #555555;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 2px;
+}
