@@ -1,9 +1,34 @@
-.colLeft, .colMiddle, .colRight   {
+@import "../styles/vars/colors.scss";
+@import "../styles/vars/dimensions.scss";
+
+
+.grid {
   float: left;
-  width: 350px;
-  margin-right: 25px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.colRight   {
-  margin: 0;
+.gridContent {
+  display: grid;
+  width: calc(100% + 2 * #{$grid-horizontal-margin});
+  margin: 0 -#{$grid-horizontal-margin};
+  grid-template-columns: $desktop-grid-columns;
+}
+
+
+/* ----- Desktop Small ----- */
+
+@media screen and (max-width: $desktop-small-max-width) {
+  .gridContent  {
+    grid-template-columns: $tablet-grid-columns;
+  }
+}
+
+
+/* -------- Mobile --------- */
+
+@media screen and (max-width: $mobile-max-width) {
+  .gridContent  {
+    grid-template-columns: $mobile-grid-columns;
+  }
 }

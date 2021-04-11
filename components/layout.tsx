@@ -4,7 +4,9 @@ import Navigation from './navigation/navigation'
 export default function Layout({ children }) {
   return (
     <div className={styles.container}>
-      <Navigation />
+      <div className={styles.desktopNavigation}>
+        <Navigation />
+      </div>
       <div className={styles.content}>
         {children}
       </div>

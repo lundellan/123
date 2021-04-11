@@ -1,12 +1,40 @@
+@import "../styles/vars/colors.scss";
+@import "../styles/vars/dimensions.scss";
+
+
 .container {
-  width: 100%;
-  max-width: 1200px;
+  width: calc(100% - 2 * #{$desktop-page-margin});
+  max-width: 1340px;
   margin: 0 auto;
   background-color: #f0f0f0;
+}
+
+.desktopNavigation  {
+  float: left;
+  width: 100px;
 }
 
 .content  {
   float: left;
   width: calc(100% - 100px);
   margin-top: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+/* -------- Tablet --------- */
+
+@media screen and (max-width: $tablet-max-width) {
+  .container  {
+     width: calc(100% - 2 * #{$tablet-page-margin});
+  }
+  
+  .desktopNavigation  {
+    display: none; 
+  }
+
+  .content  {
+    width: 100%;
+  }
 }

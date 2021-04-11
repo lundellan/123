@@ -1,16 +1,12 @@
 $info-card-color: #f0f0f0;
 $info-card-color-hover: #eaeaea;
 
-$related-content-width: 350px;
-$card-width: calc($related-content-width - 40px);
-
 .card    {
   float: left;
-  width: $card-width;
   padding: 22px 20px;
   border-radius: 15px;
   background-color: $info-card-color;
-  margin-bottom: 30px;
+  margin: 0 12.5px 30px 12.5px;
 }
 
 .card:hover  {

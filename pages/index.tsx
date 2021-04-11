@@ -12,30 +12,28 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Home | Topping</title>
+        <title>Topping</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div>
         <Search pageTitle={pageTitle} link={pageLink}/>
 
-        <div className={styles.colLeft}>
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-        </div>
-        <div className={styles.colMiddle}>
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-        </div>
-        <div className={styles.colRight}>
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
+        <div className={styles.grid}>
+          <div className={styles.gridContent}>
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+          </div>
         </div>
       </div>
     </div>

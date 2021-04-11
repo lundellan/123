@@ -5,9 +5,9 @@ import Link from 'next/link'
 const imageHeight = 100
 const imageWidth = 60
 
-export default function List({ /*image, */title, information }) {
+export default function List({ /*image, */title, information, link }) {
   return (
-    <Link href='/articles/list'>
+    <Link href={link}>
       <a className={styles.card}>
         <div className={styles.image}>
           {/* <Image

@@ -2,11 +2,10 @@ $article-card-color: #E2E5EF;
 
 .card    {
   float: left;
-  width: 350px;
   height: 260px;
   border-radius: 25px;
   background-color: $article-card-color;
-  margin-bottom: 30px;
+  margin: 0 12.5px 30px 12.5px;
 }
 
 .card h4    {

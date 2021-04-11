@@ -1,0 +1,40 @@
+/* ------- Universal ------- */
+  /* Grids */
+  $grid-horizontal-margin: 12.5px; 
+
+
+
+/* -------- Desktop -------- */
+  /* Page */
+    $desktop-page-margin: 50px;
+
+  /* Grids */
+    $desktop-grid-max-width: 1265px;
+    $desktop-grid-columns: 1fr 1fr 1fr;
+
+  /* Related */
+    $related-max-width: calc((#{$desktop-grid-max-width} - 6 * #{$grid-horizontal-margin}) / 3);
+
+
+
+/* ----- Desktop Small ----- */
+  $desktop-small-max-width: 1079px;
+
+
+
+/* -------- Tablet --------- */
+  $tablet-max-width: 774px;
+
+  /* Page */
+    $tablet-page-margin: 25px;
+
+  /* Grids */
+    $tablet-grid-columns: 1fr 1fr;
+
+
+
+/* -------- Mobile --------- */
+  $mobile-max-width: 619px;
+
+  /* Grids */
+    $mobile-grid-columns: 1fr;

@@ -8,6 +8,7 @@ import InfoCard from '../../components/cards/infoCard'
 
 const category = "Books"
 const categoryLink = "/"
+const authorLink = "/profile/profile"
 
 // Article
 const title = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
@@ -87,12 +88,13 @@ export default function List() {
       </div>
 
       <section className={styles.related}>
-        
-        <InfoCard title={author} information="Author" />
-        {/* <InfoCard title={categoryName} information={category} /> */}
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
+        <div className={styles.relatedContent}>
+          <InfoCard title={author} information="Author" link={authorLink} />
+          {/* <InfoCard title={categoryName} information={category} /> */}
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+        </div>
       </section>
     </div>
   )

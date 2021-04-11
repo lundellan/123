@@ -1,4 +1,6 @@
-$searchbar-color: #eaeaea;
+@import "../../styles/vars/colors.scss";
+@import "../../styles/vars/dimensions.scss";
+
 
 .searchSection  {
   float: left;
@@ -39,4 +41,13 @@ $searchbar-color: #eaeaea;
 
 .searchSection input[type="search"]::-webkit-search-cancel-button {
   display: none;
+}
+
+
+/* -------- Tablet --------- */
+
+@media screen and (max-width: $tablet-max-width) {
+  .searchSection input  {
+    display: none;
+  }
 }
