@@ -1,16 +1,17 @@
-$info-card-color: #f0f0f0;
-$info-card-color-hover: #eaeaea;
+@import "../../styles/vars/colors.scss";
+@import "../../styles/vars/dimensions.scss";
+
 
 .card    {
   float: left;
   padding: 22px 20px;
   border-radius: 15px;
-  background-color: $info-card-color;
+  background-color: $info-card-background;
   margin: 0 12.5px 30px 12.5px;
 }
 
 .card:hover  {
-  background-color: $info-card-color-hover;
+  background-color: $info-card-background-hover;
 }
 
 .image  {
@@ -28,7 +29,7 @@ $info-card-color-hover: #eaeaea;
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
-  color: #000000;
+  color: $info-card-title;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

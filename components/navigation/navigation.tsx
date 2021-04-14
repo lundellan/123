@@ -74,7 +74,7 @@ export default function Navigation() {
         <Link href="/">
           <a>
           <Image
-              src="/images/profile.png"
+              src="/images/profile.jpeg"
               height={iconSizeProfile}
               width={iconSizeProfile}
               alt="Jacob Lundell"

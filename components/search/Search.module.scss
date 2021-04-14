@@ -15,7 +15,7 @@
   font-weight: bold;
   font-size: 32px;
   line-height: 50px;
-  color: #000000;
+  color: $page-title-color;
   margin-right: 20px;
 }
 
@@ -28,9 +28,9 @@
   border-radius: 25px;
   padding: 0 17px;
   font-size: 22px;
-  font-family: inter, sans-serif;
+  font-family: Inter;
   font-weight: 600;
-  color: #666666;
+  color: $searchbar-placeholder-text-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

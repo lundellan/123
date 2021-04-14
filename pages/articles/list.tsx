@@ -22,10 +22,8 @@ const text1 = "The extraordinary and inspiring account of both the professional 
 const author = "Jacob Lundell"
 
 // Related
-const relatedTitle0 = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
-const relatedTitle1 = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
-const relatedTitle2 = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
-const relatedTitle3 = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
+const images = ["/images/articles/book0.png", "/images/articles/book1.png", "/images/articles/book2.png"]
+const relatedTitle = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
 const likes = 100
 const comments = 20
 
@@ -91,9 +89,9 @@ export default function List() {
         <div className={styles.relatedContent}>
           <InfoCard title={author} information="Author" link={authorLink} />
           {/* <InfoCard title={categoryName} information={category} /> */}
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
+          <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
+          <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
+          <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
         </div>
       </section>
     </div>
