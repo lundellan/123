@@ -19,25 +19,6 @@ export default function Home() {
 
       <div>
         <Search pageTitle={pageTitle} link={pageLink}/>
-
-        <div className={styles.colLeft}>
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-        </div>
-        <div className={styles.colMiddle}>
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-        </div>
-        <div className={styles.colRight}>
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-        </div>
       </div>
     </div>
   )
