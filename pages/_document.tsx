@@ -10,7 +10,8 @@ class MyDocument extends Document {
     return (
       <Html translate="no">
         <Head>
-        <meta name="robots" content="noindex" />
+          <meta name="robots" content="noindex" />
+          <script data-ad-client="ca-pub-2930474485888224" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </Head>
         <body>
           <Main />
