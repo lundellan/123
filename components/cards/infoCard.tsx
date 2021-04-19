@@ -1,23 +1,14 @@
 import styles from './InfoCard.module.scss'
-import Image from 'next/image'
 import Link from 'next/link'
 
-const imageHeight = 100
-const imageWidth = 60
-
-export default function List({ /*image, */title, information, link }) {
+export default function InfoCard({ image, title, information, link }) {
   return (
     <Link href={link}>
       <a className={styles.card}>
-        <div className={styles.image}>
-          {/* <Image
-          src={image}
-          height={imageHeight}
-          width={imageWidth}
-          alt="Create a new article"
-          draggable="false"
-        /> */}
-        </div>
+        <img
+        src={image}
+        draggable="false"
+        />
         <h4>
           {title}
         </h4>

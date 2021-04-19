@@ -3,13 +3,16 @@
   $number-color: #ffffff;
 
 /* Navigation */
-  $nav-button-color: #e0e0e0;
+  $navigation-button-background: #e0e0e0;
+  $navigation-icon: #333333;
+  $navigation-icon-focused: #000000;
 
 /* Search Section */
   $page-title-color: #000000;
 
 /* Inputs */
   $searchbar-color: #eaeaea;
+  $searchbar-text-color: #000000;
   $searchbar-placeholder-text-color: #666666;
 
 /* List */
@@ -25,3 +28,8 @@
   $info-card-background: #f0f0f0;
   $info-card-background-hover: #eaeaea;
   $info-card-title: #000000;
+
+/* Comment Card */
+  $comment-card-background: #f0f0f0;
+  $comment-card-background-hover: #eaeaea;
+  $comment-card-title: #000000;

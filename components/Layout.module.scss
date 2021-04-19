@@ -17,8 +17,8 @@
 .content  {
   float: left;
   width: calc(100% - 100px);
-  margin-top: 50px;
-  overflow: hidden;
+  margin-top: $desktop-page-margin;
+  /* overflow: hidden; */
   text-align: center;
 }
 

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const imageHeight = 100
 
-export default function List({ images, title, likes, comments }) {
+export default function ArticleCard({ images, title, likes, comments }) {
   return (
     <Link href='/articles/list'>
       <a className={styles.card}>

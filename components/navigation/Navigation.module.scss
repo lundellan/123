@@ -11,7 +11,7 @@
 
 .navigation {
   position: fixed;
-  top: 50px;
+  top: $desktop-page-margin;
   width: 100px;
   display: flex;
   flex: 1;
@@ -21,6 +21,7 @@
 .logo {
   width: 66px;
   margin: -4px 0 30px -4px;
+  cursor: pointer;
 }
 
 .navigation a   {
@@ -28,7 +29,17 @@
   width: 50px;
   border-radius: 25px;
   margin-bottom: 20px;
-  background-color: $nav-button-color;
+  background-color: $navigation-button-background;
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+.navigation a svg path  {
+  fill: $navigation-icon-focused;
+}
+
+// .navigation a:hover svg path  {
+//   fill: $navigation-icon-focused;
+// }

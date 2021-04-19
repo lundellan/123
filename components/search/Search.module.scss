@@ -16,7 +16,7 @@
   font-size: 32px;
   line-height: 50px;
   color: $page-title-color;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .searchSection input {
@@ -30,9 +30,22 @@
   font-size: 22px;
   font-family: Inter;
   font-weight: 600;
-  color: $searchbar-placeholder-text-color;
+  color: $searchbar-text-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.searchSection input::placeholder {
+  color: $searchbar-placeholder-text-color;
+  opacity: 1;
+}
+
+.searchSection input:-ms-input-placeholder {
+  color: $searchbar-placeholder-text-color;
+}
+
+.searchSection input::-ms-input-placeholder {
+  color: $searchbar-placeholder-text-color;
 }
 
 .searchSection input:focus  {

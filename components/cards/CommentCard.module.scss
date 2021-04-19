@@ -1,0 +1,120 @@
+@import "../../styles/vars/colors.scss";
+@import "../../styles/vars/dimensions.scss";
+
+
+.comment  {
+  float: left;
+  margin: 0 12.5px 30px 12.5px;
+}
+
+.card    {
+  float: left;
+  padding: 22px 20px;
+  border-radius: 15px;
+  background-color: $comment-card-background;
+  margin-bottom: 12px;
+}
+
+.card img {
+  float: left;
+  height: 44px;
+  width: 44px;
+  border-radius: 25px;
+  background-color: #cccccc;
+  margin-right: 12px;
+}
+
+.card h4    {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 21px;
+  color: $comment-card-title;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card p {
+  float: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #555555;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 12px 0 0 0;
+}
+
+.stat {
+  float: left;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #888888;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+.buttons  {
+  margin-left: 0;
+}
+
+.comment button  {
+  float: left;
+  background: transparent;
+  border: 2px solid #CACACA;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  cursor: pointer;
+}
+
+.comment button .text {
+  margin: 0 8px;
+}
+
+.comment button svg {
+  vertical-align: middle;
+  margin: -2.5px 5px 0 0;
+}
+
+.comment button path  {
+  fill: #000000;
+  stroke: #000000;
+  stroke-width: 0.3;
+}
+
+.more {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.more svg  {
+  margin: 0 auto;
+}
+
+.replies  {
+  float: right !important;
+  text-align: right !important;
+  border: 0 !important;
+  color: #999999 !important;
+  font-size: 17px !important;
+  margin-right: 0 !important;
+}
