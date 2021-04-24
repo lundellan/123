@@ -12,7 +12,6 @@
   padding: 22px 20px;
   border-radius: 15px;
   background-color: $comment-card-background;
-  margin-bottom: 12px;
 }
 
 .card img {
@@ -63,13 +62,21 @@
   margin-right: 8px;
 }
 
-.buttons  {
-  margin-left: 0;
+.buttonSection  {
+  float: left;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.replySection  {
+  float: left;
+  margin-top: 12px;
+  width: 100%;
 }
 
 .comment button  {
   float: left;
-  background: transparent;
+  background: #ffffff;
   border: 2px solid #CACACA;
   height: 30px;
   border-radius: 15px;
@@ -111,10 +118,10 @@
 }
 
 .replies  {
-  float: right !important;
   text-align: right !important;
   border: 0 !important;
-  color: #999999 !important;
-  font-size: 17px !important;
+  color: #888888 !important;
   margin-right: 0 !important;
+  background-color: transparent !important;
+  height: auto !important;
 }

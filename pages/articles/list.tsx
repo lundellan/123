@@ -10,11 +10,11 @@ import CommentCard from '../../components/cards/commentCard'
 
 // Article
 const title = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
-const wallpaper = "/images/articles/wallpaper.png"
+const wallpaper = "/images/articles/wallpaper.jpeg"
 const text0 = "Everyone out there has had days when they lose all self confidence and feel like they are going nowhere. All your ideas start sounding stupid and you don’t know why you’re still trying in the first place. This is where these inspirational biographies come into play."
 
-const image0 = "/images/articles/stevejobs.png"
-const subtitle0 = "Steve Jobs by Walter Isaacson"
+const image0 = "/images/articles/oneclick.png"
+const subtitle0 = "One Click by Richard Brandt"
 const text1 = "The extraordinary and inspiring account of both the professional and personal life of Steve Jobs. Based on three years of exclusive interviews conducted by Isaacson with both Jobs and his family, colleagues and competitors. A great insight into Jobs’s life and thoughts making it a very motivational and inspirational read, one of the best inspirational biographies out there."
 
 // Author

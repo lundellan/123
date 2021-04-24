@@ -4,7 +4,6 @@
 
 .card    {
   float: left;
-  height: 260px;
   border-radius: 25px;
   background-color: $article-card-background;
   margin: 0 12.5px 30px 12.5px;
@@ -35,7 +34,7 @@
   color: $article-card-title;
   max-height: 64px;
   overflow: hidden;
-  margin: 0 0 10px 0;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51,4 +50,56 @@
   margin-right: 12px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.buttonSection  {
+  float: left;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.buttonSection button  {
+  float: left;
+  background: #ffffff;
+  border: 2px solid #CACACA;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  cursor: pointer;
+}
+
+.buttonSection button .text {
+  margin: 0 8px;
+}
+
+.buttonSection button svg {
+  vertical-align: middle;
+  margin: -2.5px 5px 0 0;
+}
+
+.buttonSection button path  {
+  fill: #000000;
+  stroke: #000000;
+  stroke-width: 0.3;
+}
+
+.more {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.more svg  {
+  margin: 0 auto;
 }
