@@ -45,15 +45,25 @@
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  line-height: 22px;
+  line-height: 30px;
   color: $article-card-stat;
-  margin-right: 12px;
+  margin-bottom: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.card .stat img {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 8px;
+}
 
-
+.card .stat a {
+  color: #000000;
+  font-weight: 600;
+}
 
 .buttonSection  {
   float: left;
@@ -97,9 +107,10 @@
 .more {
   width: 30px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .more svg  {
-  margin: 0 auto;
+  margin: 0 !important;
 }

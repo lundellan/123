@@ -42,7 +42,7 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #555555;
+  color: #444444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 12px 0 0 0;
@@ -110,18 +110,20 @@
 .more {
   width: 30px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .more svg  {
-  margin: 0 auto;
+  margin: 0 !important;
 }
 
 .replies  {
-  text-align: right !important;
+  float: right !important;
   border: 0 !important;
-  color: #888888 !important;
   margin-right: 0 !important;
   background-color: transparent !important;
   height: auto !important;
+  line-height: 30px !important;
+  color: #888888 !important;
 }

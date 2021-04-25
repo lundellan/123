@@ -9,6 +9,9 @@ const pageTitle = "Home"
 const pageLink = "/"
 
 // Articles
+const articleAuthorLink = "/profile/profile"
+const articleAuthorProfileImage = "/images/profile.jpeg"
+const articleAuthorName = "Jacob Lundell"
 const images = ["/images/articles/book0.png", "/images/articles/book1.png", "/images/articles/book2.png"]
 const relatedTitle = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
 const likes = 100
@@ -27,18 +30,87 @@ export default function Home() {
 
         <div className={styles.grid}>
           <div className={styles.gridContent}>
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
-            <ArticleCard images={images} title={relatedTitle} likes={likes} comments={comments} />
+          <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
           </div>
         </div>
       </div>

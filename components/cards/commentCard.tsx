@@ -84,12 +84,10 @@ export default function ArticleCard({
               />
             </svg>
           </button>
+          <button className={styles.replies}>
+            Replies ↓
+          </button>
         </div>
-      </div>
-      <div className={styles.replySection}>
-        <button className={styles.replies}>
-          View replies ↓
-        </button>
       </div>
     </div>
   )

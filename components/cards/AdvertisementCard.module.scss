@@ -1,0 +1,66 @@
+@import "../../styles/vars/colors.scss";
+@import "../../styles/vars/dimensions.scss";
+
+
+.advertisement {
+  float: left;
+  margin: 0 12.5px 30px 12.5px;
+}
+
+.card    {
+  float: left;
+  padding: 22px 20px;
+  border-radius: 15px;
+  background-color: $comment-card-background;
+  width: 100%;
+}
+
+.card .stat {
+  float: left;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  color: $article-card-stat;
+  margin-right: 8px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card button  {
+  float: left;
+  background: #ffffff;
+  border: 2px solid #CACACA;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  cursor: pointer;
+}
+
+.more {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more svg  {
+  margin: 0 !important;
+}
+
+.banner {
+  float: left;
+  width: 300px;
+  height: 250px;
+  background-color: #c4c4c4;
+  margin-top: 12px;
+}

@@ -1,13 +1,27 @@
 import styles from './ArticleCard.module.scss'
-import Image from 'next/image'
 import Link from 'next/link'
 
-const imageHeight = 100
-
-export default function ArticleCard({ images, title, likes, comments }) {
+export default function ArticleCard({ 
+  authorImage, 
+  authorName, 
+  authorLink, 
+  images, 
+  title, 
+  likes, 
+  comments 
+}) {
   return (
     <Link href='/articles/list'>
       <a className={styles.card}>
+        <div className={styles.stat}>
+          <img src={authorImage} />
+          Written by&nbsp;
+          <Link href={authorLink}>
+            <a>
+              {authorName}
+            </a>
+          </Link>
+        </div>
         <div className={styles.imageSection}>
           <img className={styles.image} src={images[0]}></img>
           <img className={styles.image} src={images[1]}></img>
@@ -16,12 +30,6 @@ export default function ArticleCard({ images, title, likes, comments }) {
         <h4>
           {title}
         </h4>
-        {/* <div className={styles.stat}>
-          {likes} likes
-        </div>
-        <div className={styles.stat}>
-          {comments} comments
-        </div> */}
         <div className={styles.buttonSection}>
           <button>
             <span className={styles.text}>

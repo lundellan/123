@@ -1,15 +1,17 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import styles from './List.module.scss'
 
 import Search from '../../components/search/search'
 import ArticleCard from '../../components/cards/articleCard'
+import AdvertisementCard from '../../components/cards/advertisementCard'
 import InfoCard from '../../components/cards/infoCard'
 import CommentCard from '../../components/cards/commentCard'
 
 
 // Article
 const title = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
+const date = "5h ago"
 const wallpaper = "/images/articles/wallpaper.jpeg"
 const text0 = "Everyone out there has had days when they lose all self confidence and feel like they are going nowhere. All your ideas start sounding stupid and you don’t know why you’re still trying in the first place. This is where these inspirational biographies come into play."
 
@@ -27,6 +29,9 @@ const category = "Books"
 const categoryLink = "/"
 
 // Related
+const articleAuthorLink = "/profile/profile"
+const articleAuthorProfileImage = "/images/profile.jpeg"
+const articleAuthorName = "Jacob Lundell"
 const images = ["/images/articles/book0.png", "/images/articles/book1.png", "/images/articles/book2.png"]
 const relatedTitle = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
 const likes = 100
@@ -60,12 +65,32 @@ export default function List() {
                 <h1 property="name">
                   {title}
                 </h1>
+
+                <time>
+                  <img src={authorProfilePicture} />
+                  Written by&nbsp;
+                  <Link href={authorLink}>
+                    <a className={styles.author}>
+                      {author}
+                    </a>
+                  </Link>
+                  {/* &nbsp;in&nbsp;
+                  <Link href={authorLink}>
+                    <a className={styles.author}>
+                      {category}
+                    </a>
+                  </Link> */}
+                  &nbsp;&#xb7;&nbsp;
+                  {date}
+                </time>
+
                 <div className={styles.wallpaper}>
                   <img
                     src={wallpaper}
                     draggable="false"
                   />
                 </div>
+
                 <p>
                   {text0}
                 </p>
@@ -74,8 +99,6 @@ export default function List() {
               <link property="itemListOrder" href="https://schema.org/ItemListOrderDescending" />
               
               <section className={styles.entry}>
-                <div className={styles.number}>1</div>
-                
                 <span property="itemListElement">
                   <div className={styles.wallpaper}>
                     <img
@@ -83,6 +106,7 @@ export default function List() {
                       draggable="false"
                     />
                   </div>
+                  <div className={styles.number}>1</div>
                   <h2>
                     {subtitle0}
                   </h2>
@@ -98,20 +122,35 @@ export default function List() {
 
         <section className={styles.related}>
           <div className={styles.relatedContent}>
-            <InfoCard image={authorProfilePicture} title={author} information="Author" link={authorLink} />
-            <ArticleCard 
+            <AdvertisementCard />
+            {/* <InfoCard 
+              image={authorProfilePicture} 
+              title={author} 
+              information="Author" 
+              link={authorLink} 
+            /> */}
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images} 
+              title={relatedTitle} 
+              likes={likes} 
+              comments={comments} 
+            />
+            <ArticleCard
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink} 
               images={images} 
               title={relatedTitle} 
               likes={likes} 
               comments={comments} 
             />
             <ArticleCard 
-              images={images} 
-              title={relatedTitle} 
-              likes={likes} 
-              comments={comments} 
-            />
-            <ArticleCard 
+              authorImage={articleAuthorProfileImage} 
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
               images={images} 
               title={relatedTitle} 
               likes={likes} 
