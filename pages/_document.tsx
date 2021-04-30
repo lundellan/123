@@ -12,6 +12,7 @@ class MyDocument extends Document {
         <Head>
           <meta name="robots" content="noindex" />
           <script data-ad-client="ca-pub-2930474485888224" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <link rel="stylesheet" href="https://use.typekit.net/fdq4cxa.css"></link>
         </Head>
         <body>
           <Main />

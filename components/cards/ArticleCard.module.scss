@@ -28,8 +28,8 @@
   float: left;
   font-family: Inter;
   font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 25px;
   line-height: 32px;
   color: $article-card-title;
   max-height: 64px;
@@ -67,7 +67,7 @@
 
 .buttonSection  {
   float: left;
-  margin-top: 12px;
+  margin-top: 8px;
   width: 100%;
 }
 
@@ -95,7 +95,7 @@
 
 .buttonSection button svg {
   vertical-align: middle;
-  margin: -2.5px 5px 0 0;
+  margin: -2.5px 3px 0 0;
 }
 
 .buttonSection button path  {
