@@ -1,6 +1,11 @@
 import styles from './ArticleCard.module.scss'
 import Link from 'next/link'
 
+function propagation(event)  {
+    console.log("hi");
+    event.stopPropagation();
+}
+
 export default function ArticleCard({ 
   authorImage, 
   authorName, 
@@ -47,7 +52,7 @@ export default function ArticleCard({
               {likes}
             </span>
           </button>
-          <button>
+          <button onClick={propagation}>
             <span className={styles.text}>
               <svg 
                 width="15"

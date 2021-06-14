@@ -7,6 +7,7 @@
   width: 100px;
   position: relative;
   height: 1px;
+  z-index: 1000;
 }
 
 .navigation {
@@ -20,7 +21,7 @@
 
 .logo {
   width: 66px;
-  margin: -4px 0 30px -4px;
+  margin: -16px 0 20px -16px;
   cursor: pointer;
 }
 
@@ -34,6 +35,17 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  box-shadow: 0px 0px 16px #dddddd, inset 0px -6px 12px 1px rgba(0, 0, 0, 0.1);
+  transition: .0125s;
+}
+
+.navigation a:hover {
+  background-color: $navigation-button-background-hover;
+  box-shadow: 0px 0px 16px #d0d0d0, inset 0px -6px 12px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navigation a:active {
+  transform: scale(.95);
 }
 
 .navigation a svg path  {

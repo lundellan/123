@@ -1,6 +1,6 @@
 import styles from './AdvertisementCard.module.scss'
 
-const placeholderImage = "/images/advertisements/300x250.jpg"
+const placeholderImage = "/images/advertisements/300x250.jpeg"
 
 export default function AdvertisementCard() {
   return (
@@ -27,6 +27,7 @@ export default function AdvertisementCard() {
             />
           </svg>
         </button>
+        <div className={styles.banner}></div>
         <img 
           className={styles.banner}
           src={placeholderImage}

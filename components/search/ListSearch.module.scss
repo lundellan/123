@@ -6,6 +6,16 @@
   float: left;
   width: 100%;
   margin-bottom: 40px;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.searchSection img {
+  float: left;
+  width: 36px;
+  height: 36px;
+  margin-top: 7px;
+  margin-right: 12px;
 }
 
 .searchSection a {
@@ -13,7 +23,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 50px;
   color: $page-title-color;
   margin-right: 20px;

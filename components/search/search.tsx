@@ -3,7 +3,7 @@ import styles from './Search.module.scss'
 
 export default function Search({ pageTitle, link }) {
   return (
-    <div className={styles.searchSection}>
+    <div className={styles.searchSection}>     
       <Link href={link}>
         <a>
           {pageTitle}

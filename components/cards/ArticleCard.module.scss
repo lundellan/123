@@ -8,6 +8,12 @@
   background-color: $article-card-background;
   margin: 0 12.5px 30px 12.5px;
   padding: 22px 20px;
+  transition: .05s;
+}
+
+.card:hover  {
+  background-color: $article-card-background-hover;
+  transform: scale(1.01);
 }
 
 .imageSection {
@@ -29,7 +35,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 32px;
   color: $article-card-title;
   max-height: 64px;
@@ -58,6 +64,8 @@
   height: 30px;
   border-radius: 15px;
   margin-right: 8px;
+  box-shadow: inset 0px -6px 6px rgba(204, 204, 204, 0.3);
+  filter: drop-shadow(0px 0px 15px #B0B4C0);
 }
 
 .card .stat a {
@@ -67,16 +75,16 @@
 
 .buttonSection  {
   float: left;
-  margin-top: 8px;
+  margin-top: 12px;
   width: 100%;
 }
 
 .buttonSection button  {
   float: left;
   background: #ffffff;
-  border: 2px solid #CACACA;
+  border: 0;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 100px;
   margin-right: 8px;
   font-family: Inter;
   font-style: normal;
@@ -87,6 +95,16 @@
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   cursor: pointer;
+  box-shadow: 0px 0px 15px #B0B4C0, inset 0px -6px 6px rgba(204, 204, 204, 0.3);
+  transition: .0125s;
+}
+
+.buttonSection button:hover {
+  box-shadow: 0px 0px 15px #9ba0b4, inset 0px -6px 6px rgba(204, 204, 204, 0.3);
+}
+
+.buttonSection button:active {
+  transform: scale(.95);
 }
 
 .buttonSection button .text {

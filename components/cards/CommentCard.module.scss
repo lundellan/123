@@ -21,6 +21,8 @@
   border-radius: 25px;
   background-color: #cccccc;
   margin-right: 12px;
+  box-shadow: inset 0px -6px 6px rgba(204, 204, 204, 0.3);
+  filter: drop-shadow(0px 0px 15px #C0C0C0);
 }
 
 .card h4    {
@@ -45,7 +47,7 @@
   color: #444444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 8px 0 0 0;
+  margin: 12px 0 0 0;
 }
 
 .stat {
@@ -64,7 +66,7 @@
 
 .buttonSection  {
   float: left;
-  margin-top: 10px;
+  margin-top: 12px;
   width: 100%;
 }
 
@@ -77,7 +79,7 @@
 .comment button  {
   float: left;
   background: #ffffff;
-  border: 2px solid #CACACA;
+  border: 0;
   height: 30px;
   border-radius: 15px;
   margin-right: 8px;
@@ -90,6 +92,17 @@
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   cursor: pointer;
+  box-shadow: 0px 0px 15px #C0C0C0, inset 0px -6px 6px rgba(221, 221, 221, 0.3);
+  transition: .0125s;
+}
+
+.comment button:hover {
+  box-shadow: 0px 0px 15px #aaaaaa, inset 0px -6px 6px rgba(221, 221, 221, 0.3);
+  
+}
+
+.buttonSection button:active {
+  transform: scale(.95);
 }
 
 .comment button .text {
@@ -127,4 +140,10 @@
   line-height: 30px !important;
   color: #888888 !important;
   font-size: 17px !important;
+  box-shadow: none !important;
+}
+
+.replies svg  {
+  margin-left: 5px !important;
+  fill: #888888 !important;
 }

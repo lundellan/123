@@ -1,0 +1,12 @@
+@import "../../styles/vars/colors.scss";
+@import "../../styles/vars/dimensions.scss";
+
+
+.parent {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 56px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, #FFFFFF 100%, #FFFFFF 100%);
+  z-index: 1000;
+}

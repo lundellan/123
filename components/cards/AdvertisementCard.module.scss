@@ -31,7 +31,7 @@
 .card button  {
   float: left;
   background: #ffffff;
-  border: 2px solid #CACACA;
+  border: 0;
   height: 30px;
   border-radius: 15px;
   margin-right: 8px;
@@ -44,6 +44,7 @@
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   cursor: pointer;
+  box-shadow: 0px 0px 15px #C0C0C0, inset 0px -6px 6px rgba(221, 221, 221, 0.3);
 }
 
 .more {
