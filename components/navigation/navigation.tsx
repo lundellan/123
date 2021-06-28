@@ -90,7 +90,7 @@ export default function Navigation() {
           </a>
         </Link>
 
-        <Link href="/">
+        {/* <Link href="/">
           <a>
             <img
               src="/images/profile.jpeg"
@@ -100,7 +100,7 @@ export default function Navigation() {
               draggable="false"
             />
           </a>
-        </Link>
+        </Link> */}
       </nav>
     </div>
   )

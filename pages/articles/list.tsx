@@ -3,11 +3,11 @@ import Link from 'next/link'
 import styles from './List.module.scss'
 
 import Search from '../../components/search/listSearch'
-import ArticleCard from '../../components/cards/articleCard'
+import ListNavigation from '../../components/navigation/listNavigation'
+import RelatedArticleCard from '../../components/cards/relatedArticleCard'
 import AdvertisementCard from '../../components/cards/advertisementCard'
 import InfoCard from '../../components/cards/infoCard'
 import CommentCard from '../../components/cards/commentCard'
-import DesktopActions from '../../components/actions/desktopActions'
 
 
 // Article
@@ -56,7 +56,7 @@ export default function List() {
         <title>{title} | {category} | Topping</title>
       </Head>
 
-      {/* <DesktopActions /> */}
+      <ListNavigation />
 
       <div className={styles.articleGrid}>
         
@@ -156,36 +156,39 @@ export default function List() {
               information="Author" 
               link={authorLink} 
             /> */}
-            <ArticleCard
-              authorImage={articleAuthorProfileImage} 
-              authorName={articleAuthorName}
-              authorLink={articleAuthorLink}
-              images={images} 
-              title={relatedTitle} 
-              likes={likes} 
-              comments={comments} 
-            />
-            <ArticleCard
-              authorImage={articleAuthorProfileImage} 
-              authorName={articleAuthorName}
-              authorLink={articleAuthorLink} 
-              images={images} 
-              title={relatedTitle} 
-              likes={likes} 
-              comments={comments} 
-            />
-            <ArticleCard 
-              authorImage={articleAuthorProfileImage} 
-              authorName={articleAuthorName}
-              authorLink={articleAuthorLink}
-              images={images} 
-              title={relatedTitle} 
-              likes={likes} 
-              comments={comments} 
-            />
           </div>
 
-          <section className={styles.comments}>
+          <div className={styles.relatedArticles}>
+              <RelatedArticleCard
+                authorImage={articleAuthorProfileImage} 
+                authorName={articleAuthorName}
+                authorLink={articleAuthorLink}
+                images={images} 
+                title={relatedTitle} 
+                likes={likes} 
+                comments={comments} 
+              />
+              <RelatedArticleCard
+                authorImage={articleAuthorProfileImage} 
+                authorName={articleAuthorName}
+                authorLink={articleAuthorLink} 
+                images={images} 
+                title={relatedTitle} 
+                likes={likes} 
+                comments={comments} 
+              />
+              <RelatedArticleCard 
+                authorImage={articleAuthorProfileImage} 
+                authorName={articleAuthorName}
+                authorLink={articleAuthorLink}
+                images={images} 
+                title={relatedTitle} 
+                likes={likes} 
+                comments={comments} 
+              />
+            </div>
+
+          {/* <section className={styles.comments}>
             <CommentCard 
               authorProfileLink={commentAuthorLink} 
               authorProfileImage={commentAuthorProfileImage}
@@ -249,7 +252,7 @@ export default function List() {
               likes={commentLikes}
               replies={commentReplies}
             />
-          </section>
+          </section> */}
         </section>
       </div>
     </div>

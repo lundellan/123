@@ -1,0 +1,46 @@
+@import "../../styles/vars/colors.scss";
+@import "../../styles/vars/dimensions.scss";
+
+
+.container  {
+  position: fixed;
+  top: 310px;
+  left: 30px;
+  width: 50px;
+  height: calc(100vh - 310px);
+  // border-top: 2px solid #f0f0f0;
+  overflow: hidden;
+}
+
+.navigation {
+  height: 100%;
+  width: calc(50px + 30px);
+  padding-right: 30px;
+  overflow: auto;
+  padding-top: 20px;
+}
+
+.thumbnail  {
+  max-height: 50px;
+  max-width: 50px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 15px;
+}
+
+.topShadow  {
+  position: fixed;
+  width: 50px;
+  height: 20px;
+  background: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%);
+  transform: matrix(-1, 0, 0, 1, 0, 0); 
+}
+
+.bottomShadow {
+  position: fixed;
+  bottom: 0;
+  width: 50px;
+  height: 20px;
+  background: linear-gradient(180deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}

@@ -1,0 +1,134 @@
+@import "../../styles/vars/colors.scss";
+@import "../../styles/vars/dimensions.scss";
+
+
+.card    {
+  float: left;
+  border-radius: 25px;
+  background-color: $related-article-card-background;
+  margin: 0 12.5px 30px 12.5px;
+  padding: 22px 20px;
+  transition: .05s;
+}
+
+.card:hover  {
+  background-color: $related-article-card-background-hover;
+  transform: scale(1.01);
+}
+
+.imageSection {
+  float: left;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.image  {
+  float: left;
+  height: 100px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.card h4    {
+  float: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: $article-card-title;
+  max-height: 64px;
+  overflow: hidden;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card .stat {
+  float: left;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  color: $article-card-stat;
+  margin-bottom: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card .stat img {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 8px;
+  box-shadow: inset 0px -6px 6px rgba(204, 204, 204, 0.3);
+  filter: drop-shadow(0px 0px 15px #B0B4C0);
+}
+
+.card .stat a {
+  color: #000000;
+  font-weight: 600;
+}
+
+.buttonSection  {
+  float: left;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.buttonSection button  {
+  float: left;
+  background: #ffffff;
+  border: 0;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px #B0B4C0, inset 0px -6px 6px rgba(204, 204, 204, 0.3);
+  transition: .0125s;
+}
+
+.buttonSection button:hover {
+  box-shadow: 0px 0px 15px #9ba0b4, inset 0px -6px 6px rgba(204, 204, 204, 0.3);
+}
+
+.buttonSection button:active {
+  transform: scale(.95);
+}
+
+.buttonSection button .text {
+  margin: 0 8px;
+}
+
+.buttonSection button svg {
+  vertical-align: middle;
+  margin: -2.5px 3px 0 0;
+}
+
+.buttonSection button path  {
+  fill: #000000;
+  stroke: #000000;
+  stroke-width: 0.3;
+}
+
+.more {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more svg  {
+  margin: 0 !important;
+}

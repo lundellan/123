@@ -27,7 +27,7 @@ export default function AdvertisementCard() {
             />
           </svg>
         </button>
-        <div className={styles.banner}></div>
+        {/* <div className={styles.banner}></div> */}
         <img 
           className={styles.banner}
           src={placeholderImage}
