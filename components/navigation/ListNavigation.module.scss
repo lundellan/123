@@ -4,12 +4,13 @@
 
 .container  {
   position: fixed;
-  top: 310px;
-  left: 30px;
+  top: 330px;
+  margin-left: -100px;
   width: 50px;
   height: calc(100vh - 310px);
-  // border-top: 2px solid #f0f0f0;
+  border-top: 2px solid #f0f0f0;
   overflow: hidden;
+  counter-reset: section;
 }
 
 .navigation {
@@ -20,12 +21,33 @@
   padding-top: 20px;
 }
 
+.number {
+  float: left;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: -10px;
+  z-index: 2;
+  position: relative;
+}
+
+.number::before {
+  content: counter(section);
+}
+
 .thumbnail  {
   max-height: 50px;
   max-width: 50px;
   object-fit: cover;
   object-position: center;
   margin-bottom: 15px;
+  z-index: 1;
+  position: relative;
 }
 
 .topShadow  {

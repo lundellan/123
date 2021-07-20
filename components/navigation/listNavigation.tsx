@@ -18,45 +18,69 @@ export default function ListNavigation() {
 
       <nav className={styles.navigation}>
         <Link href="#">
-          <img 
-            className={styles.thumbnail}
-            src={book0} 
-          />
+          <div>
+            <div className={styles.number}></div>
+
+            <img 
+              className={styles.thumbnail}
+              src={book0} 
+            />
+          </div>
         </Link>
 
         <Link href="#">
-          <img 
-            className={styles.thumbnail}
-            src={book1} 
-          />
+          <div>
+            <div className={styles.number}></div>
+
+            <img 
+              className={styles.thumbnail}
+              src={book1} 
+            />
+          </div>
         </Link>
 
         <Link href="#">
-          <img 
-            className={styles.thumbnail}
-            src={book2} 
-          />
+          <div>
+            <div className={styles.number}></div>
+
+            <img 
+              className={styles.thumbnail}
+              src={book2} 
+            />
+          </div>
         </Link>
 
         <Link href="#">
-          <img 
-            className={styles.thumbnail}
-            src={book3} 
-          />
+          <div>
+            <div className={styles.number}></div>
+
+            <img 
+              className={styles.thumbnail}
+              src={book3} 
+            />
+          </div>
         </Link>
 
         <Link href="#">
-          <img 
-            className={styles.thumbnail}
-            src={book4} 
-          />
+          <div>
+            <div className={styles.number}></div>
+
+            <img 
+              className={styles.thumbnail}
+              src={book4} 
+            />
+          </div>
         </Link>
 
         <Link href="#">
-          <img 
-            className={styles.thumbnail}
-            src={book5} 
-          />
+          <div>
+            <div className={styles.number}></div>
+
+            <img 
+              className={styles.thumbnail}
+              src={book5} 
+            />
+          </div>
         </Link>
       </nav>
 
