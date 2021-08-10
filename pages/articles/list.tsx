@@ -14,6 +14,7 @@ import CommentCard from '../../components/cards/commentCard'
 const title = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
 const date = "5h ago"
 const wallpaper = "/images/articles/wallpaper.jpeg"
+const caption = "A happy Jeff Bezos getting lots of money. "
 const text0 = "Everyone out there has had days when they lose all self confidence and feel like they are going nowhere. All your ideas start sounding stupid and you don’t know why you’re still trying in the first place. This is where these inspirational biographies come into play."
 
 const image0 = "/images/articles/oneclick.png"
@@ -59,57 +60,72 @@ export default function List() {
       <ListNavigation />
 
       <div className={styles.articleGrid}>
-        
+
         <div className={styles.article}>
-          <Search 
-            category={category} 
+          {/* <Search
+            category={category}
             link={categoryLink}
             icon={categoryIcon}
-          />
+          /> */}
 
           <main role="main">
             <article vocab="https://schema.org/" typeof="ItemList">
-              
-              <header className={styles.intro}>
-                <h1 property="name">
-                  {title}
-                </h1>
-
-                <time>
-                  <img src={authorProfilePicture} />
-                  Written by&nbsp;
-                  <Link href={authorLink}>
-                    <a className={styles.author}>
-                      {author}
-                    </a>
-                  </Link>
-                  {/* &nbsp;in&nbsp;
+              <time> <a className={styles.emoji}>📚</a> Published in&nbsp;
+                <Link href={categoryLink}>
+                  <a className={styles.category}>
+                    {category}
+                  </a>
+                </Link>
+              </time>
+              <time>
+                <img src={authorProfilePicture} />
+                Written by&nbsp;
+                <Link href={authorLink}>
+                  <a className={styles.author}>
+                    {author}
+                  </a>
+                </Link>
+                {/* &nbsp;in&nbsp;
                   <Link href={authorLink}>
                     <a className={styles.author}>
                       {category}
                     </a>
                   </Link> */}
-                  &nbsp;&#xb7;&nbsp;
-                  {date}
-                </time>
+                &nbsp;&#xb7;&nbsp;
+                {/* {date} */}
+              </time>
+
+
+              <header className={styles.intro}>
+
+                <h1 property="name">
+                  {title}
+                </h1>
+
+                <p>
+                  {text0}
+                </p>
 
                 <div className={styles.wallpaper}>
                   <img
                     src={wallpaper}
                     draggable="false"
                   />
+                  <caption>
+                    {caption}
+                  </caption>
                 </div>
-
                 <p>
                   {text0}
                 </p>
+
+
               </header>
-              
+
               <link property="itemListOrder" href="https://schema.org/ItemListOrderDescending" />
-              
               <section className={styles.entry}>
                 <span property="itemListElement">
-                <div className={styles.number}>1</div>
+                  <div className={styles.number}>1</div>
                   <div className={styles.wallpaper}>
                     <img
                       src={image0}
@@ -127,7 +143,7 @@ export default function List() {
 
               <section className={styles.entry}>
                 <span property="itemListElement">
-                <div className={styles.number}>1</div>
+                  <div className={styles.number}>1</div>
                   <div className={styles.wallpaper}>
                     <img
                       src={image0}
@@ -159,34 +175,34 @@ export default function List() {
           </div>
 
           <div className={styles.relatedArticles}>
-              <RelatedArticleCard
-                authorImage={articleAuthorProfileImage} 
-                authorName={articleAuthorName}
-                authorLink={articleAuthorLink}
-                images={images} 
-                title={relatedTitle} 
-                likes={likes} 
-                comments={comments} 
-              />
-              <RelatedArticleCard
-                authorImage={articleAuthorProfileImage} 
-                authorName={articleAuthorName}
-                authorLink={articleAuthorLink} 
-                images={images} 
-                title={relatedTitle} 
-                likes={likes} 
-                comments={comments} 
-              />
-              <RelatedArticleCard 
-                authorImage={articleAuthorProfileImage} 
-                authorName={articleAuthorName}
-                authorLink={articleAuthorLink}
-                images={images} 
-                title={relatedTitle} 
-                likes={likes} 
-                comments={comments} 
-              />
-            </div>
+            <RelatedArticleCard
+              authorImage={articleAuthorProfileImage}
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images}
+              title={relatedTitle}
+              likes={likes}
+              comments={comments}
+            />
+            <RelatedArticleCard
+              authorImage={articleAuthorProfileImage}
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images}
+              title={relatedTitle}
+              likes={likes}
+              comments={comments}
+            />
+            <RelatedArticleCard
+              authorImage={articleAuthorProfileImage}
+              authorName={articleAuthorName}
+              authorLink={articleAuthorLink}
+              images={images}
+              title={relatedTitle}
+              likes={likes}
+              comments={comments}
+            />
+          </div>
 
           {/* <section className={styles.comments}>
             <CommentCard 
