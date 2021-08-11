@@ -3,6 +3,8 @@ import Link from 'next/link'
 import styles from './List.module.scss'
 
 import Search from '../../components/search/listSearch'
+import ListCategory from '../../components/list/listCategory'
+import ListAuthor from '../../components/list/listAuthor'
 import ListNavigation from '../../components/navigation/listNavigation'
 import RelatedArticleCard from '../../components/cards/relatedArticleCard'
 import AdvertisementCard from '../../components/cards/advertisementCard'
@@ -11,7 +13,7 @@ import CommentCard from '../../components/cards/commentCard'
 
 
 // Article
-const title = "10 Inspirational Biographies That Can Steer You Towards The Right Path"
+const title = "10 Inspirational Biographies"
 const date = "5h ago"
 const wallpaper = "/images/articles/wallpaper.jpeg"
 const caption = "A happy Jeff Bezos getting lots of money. "
@@ -22,9 +24,9 @@ const subtitle0 = "One Click by Richard Brandt"
 const text1 = "The extraordinary and inspiring account of both the professional and personal life of Steve Jobs. Based on three years of exclusive interviews conducted by Isaacson with both Jobs and his family, colleagues and competitors. A great insight into Jobs’s life and thoughts making it a very motivational and inspirational read, one of the best inspirational biographies out there."
 
 // Author
-const authorLink = "/profile/profile"
 const author = "Jacob Lundell"
-const authorProfilePicture = "/images/profile.jpeg"
+const authorLink = "/profile/profile"
+const authorPicture = "/images/profile.jpeg"
 
 // Category
 const category = "Books"
@@ -70,21 +72,20 @@ export default function List() {
 
           <main role="main">
             <article vocab="https://schema.org/" typeof="ItemList">
-              <time> <a className={styles.emoji}>📚</a> Published in&nbsp;
-                <Link href={categoryLink}>
-                  <a className={styles.category}>
-                    {category}
-                  </a>
-                </Link>
-              </time>
+              
+              <ListCategory 
+                category={category}
+                categoryLink={categoryLink}
+                categoryIcon={categoryIcon}
+              />
+
+              <ListAuthor 
+                author={author}
+                authorLink={authorLink}
+                authorPicture={authorPicture}
+              />
+
               <time>
-                <img src={authorProfilePicture} />
-                Written by&nbsp;
-                <Link href={authorLink}>
-                  <a className={styles.author}>
-                    {author}
-                  </a>
-                </Link>
                 {/* &nbsp;in&nbsp;
                   <Link href={authorLink}>
                     <a className={styles.author}>
