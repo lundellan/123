@@ -1,0 +1,24 @@
+@import "../../styles/vars/colors.scss";
+
+.image {
+  float: left;
+}
+
+.image img  {
+  float: left;
+  max-width: 100%;
+  max-height: 700px;
+}
+
+.image caption  {
+  float: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: $caption-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 1em;
+}

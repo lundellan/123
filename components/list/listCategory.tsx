@@ -12,6 +12,7 @@ export default function ListCategory({
         <img
           src={categoryIcon}
           draggable="false"
+          alt={category + " category"}
         />
 
         Published in&nbsp;

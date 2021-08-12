@@ -2,10 +2,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from './List.module.scss'
 
-import Search from '../../components/search/listSearch'
+import ListNavigation from '../../components/navigation/listNavigation'
 import ListCategory from '../../components/list/listCategory'
 import ListAuthor from '../../components/list/listAuthor'
-import ListNavigation from '../../components/navigation/listNavigation'
+import ListHeader from '../../components/list/listHeader'
+import ListImage from '../../components/list/listImage'
+import ListParagraph from '../../components/list/listParagraph'
 import RelatedArticleCard from '../../components/cards/relatedArticleCard'
 import AdvertisementCard from '../../components/cards/advertisementCard'
 import InfoCard from '../../components/cards/infoCard'
@@ -14,9 +16,12 @@ import CommentCard from '../../components/cards/commentCard'
 
 // Article
 const title = "10 Inspirational Biographies"
-const date = "5h ago"
+const description = "Everyone out there has had days when they lose all self confidence and feel like they are going nowhere. All your ideas start sounding stupid and you don’t know why you’re still trying in the first place. This is where these inspirational biographies come into play."
 const wallpaper = "/images/articles/wallpaper.jpeg"
-const caption = "A happy Jeff Bezos getting lots of money. "
+const wallpaperCaption = "A happy Jeff Bezos getting lots of money."
+const datePublished = "2021-01-05 09:31:10 -0700 -0700"
+const dateModified = "2021-01-05 09:31:10 -0700 -0700"
+
 const text0 = "Everyone out there has had days when they lose all self confidence and feel like they are going nowhere. All your ideas start sounding stupid and you don’t know why you’re still trying in the first place. This is where these inspirational biographies come into play."
 
 const image0 = "/images/articles/oneclick.png"
@@ -59,19 +64,33 @@ export default function List() {
         <title>{title} | {category} | Topping</title>
       </Head>
 
-      <ListNavigation />
+      <ListNavigation 
+        // lägg till thumbnails
+      />
 
-      <div className={styles.articleGrid}>
-
+      <div className={styles.layout}>
         <div className={styles.article}>
-          {/* <Search
-            category={category}
-            link={categoryLink}
-            icon={categoryIcon}
-          /> */}
-
           <main role="main">
-            <article vocab="https://schema.org/" typeof="ItemList">
+            <article 
+              vocab="https://schema.org/" 
+              typeof="ItemList"
+            >
+              <meta 
+                itemProp="datePublished" 
+                content={datePublished}
+              />
+              <meta 
+                itemProp="dateModified"
+                content={dateModified}
+              />
+              <meta
+                itemProp="image"
+                content={wallpaper}
+              />
+              <meta 
+                itemProp="publisher"
+                content="Topping"
+              />
               
               <ListCategory 
                 category={category}
@@ -85,80 +104,38 @@ export default function List() {
                 authorPicture={authorPicture}
               />
 
-              <time>
-                {/* &nbsp;in&nbsp;
-                  <Link href={authorLink}>
-                    <a className={styles.author}>
-                      {category}
-                    </a>
-                  </Link> */}
-                &nbsp;&#xb7;&nbsp;
-                {/* {date} */}
-              </time>
+              <ListHeader 
+                title={title}
+                description={description}
+                wallpaper={wallpaper}
+                wallpaperCaption={wallpaperCaption}
+              />
 
-
-              <header className={styles.intro}>
-
-                <h1 property="name">
-                  {title}
-                </h1>
-
-                <p>
-                  {text0}
-                </p>
-
-                <div className={styles.wallpaper}>
-                  <img
-                    src={wallpaper}
-                    draggable="false"
-                  />
-                  <caption>
-                    {caption}
-                  </caption>
-                </div>
-                <p>
-                  {text0}
-                </p>
-
-
-              </header>
-
+              {/* Ska inte vara "ItemListOrderDescending" för guider, bara numeriska topplistor */}
               <link property="itemListOrder" href="https://schema.org/ItemListOrderDescending" />
-              <section className={styles.entry}>
-                <span property="itemListElement">
-                  <div className={styles.number}>1</div>
-                  <div className={styles.wallpaper}>
-                    <img
-                      src={image0}
-                      draggable="false"
-                    />
-                  </div>
-                  <h2>
-                    {subtitle0}
-                  </h2>
-                  <p>
-                    {text1}
-                  </p>
-                </span>
-              </section>
 
-              <section className={styles.entry}>
-                <span property="itemListElement">
-                  <div className={styles.number}>1</div>
-                  <div className={styles.wallpaper}>
-                    <img
-                      src={image0}
-                      draggable="false"
-                    />
-                  </div>
-                  <h2>
-                    {subtitle0}
-                  </h2>
-                  <p>
-                    {text1}
-                  </p>
-                </span>
-              </section>
+              <ListParagraph 
+                text={text0}
+              />
+
+              {/* ListEntry   */}
+                <section className={styles.entry}>
+                  <span property="itemListElement">
+                    <div className={styles.number}>1</div>
+                    <div className={styles.wallpaper}>
+                      <img
+                        src={image0}
+                        draggable="false"
+                      />
+                    </div>
+                    <h2>
+                      {subtitle0}
+                    </h2>
+                    <p>
+                      {text1}
+                    </p>
+                  </span>
+                </section>
 
             </article>
           </main>
