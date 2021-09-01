@@ -16,7 +16,7 @@ export default function ListHeader({
       </h1>
 
       <ListParagraph 
-        text={description}
+        content={description}
       />
 
       <ListImage 

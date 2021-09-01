@@ -14,12 +14,8 @@ export default function ListCategory({
           draggable="false"
           alt={category + " category"}
         />
-
         Published in&nbsp;
-
-        <span className={styles.name}>
-          {category}
-        </span>
+        <span>{category}</span>
       </a>
     </Link>
   )

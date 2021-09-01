@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from './List.module.scss'
 
 import ListNavigation from '../../components/navigation/listNavigation'
 import ListCategory from '../../components/list/listCategory'
 import ListAuthor from '../../components/list/listAuthor'
 import ListHeader from '../../components/list/listHeader'
+import ListEntry from '../../components/list/listEntry'
 import ListImage from '../../components/list/listImage'
 import ListParagraph from '../../components/list/listParagraph'
 import RelatedArticleCard from '../../components/cards/relatedArticleCard'
@@ -13,30 +13,34 @@ import AdvertisementCard from '../../components/cards/advertisementCard'
 import InfoCard from '../../components/cards/infoCard'
 import CommentCard from '../../components/cards/commentCard'
 
-
-// Article
-const title = "10 Inspirational Biographies"
-const description = "Everyone out there has had days when they lose all self confidence and feel like they are going nowhere. All your ideas start sounding stupid and you don’t know why you’re still trying in the first place. This is where these inspirational biographies come into play."
-const wallpaper = "/images/articles/wallpaper.jpeg"
-const wallpaperCaption = "A happy Jeff Bezos getting lots of money."
+// Meta data
 const datePublished = "2021-01-05 09:31:10 -0700 -0700"
 const dateModified = "2021-01-05 09:31:10 -0700 -0700"
 
-const text0 = "Everyone out there has had days when they lose all self confidence and feel like they are going nowhere. All your ideas start sounding stupid and you don’t know why you’re still trying in the first place. This is where these inspirational biographies come into play."
-
-const image0 = "/images/articles/oneclick.png"
-const subtitle0 = "One Click by Richard Brandt"
-const text1 = "The extraordinary and inspiring account of both the professional and personal life of Steve Jobs. Based on three years of exclusive interviews conducted by Isaacson with both Jobs and his family, colleagues and competitors. A great insight into Jobs’s life and thoughts making it a very motivational and inspirational read, one of the best inspirational biographies out there."
+// Category
+const category = "Books"
+const categoryLink = "/"
+const categoryIcon = "/images/categories/books.png"
 
 // Author
 const author = "Jacob Lundell"
 const authorLink = "/profile/profile"
 const authorPicture = "/images/profile.jpeg"
 
-// Category
-const category = "Books"
-const categoryLink = "/"
-const categoryIcon = "/images/categories/books.png"
+// Article intro
+const articleTitle = "10 Inspirational Biographies"
+const articleDescription = "Everyone out there has had days when they lose all self confidence and feel like they are going nowhere. All your ideas start sounding stupid and you don’t know why you’re still trying in the first place. This is where these inspirational biographies come into play."
+const articleWallpaper = "/images/articles/wallpaper.jpeg"
+const articleWallpaperCaption = "A happy Jeff Bezos getting lots of money"
+
+// Article paragraph (first)
+const articleParagraph0 = "Everyone out there has had days when they lose all self confidence and feel like they are going nowhere. All your ideas start sounding stupid and you don’t know why you’re still trying in the first place. This is where these inspirational biographies come into play."
+
+// Article entry (first)
+const entryTitleMain0 = "One Click"
+const entryTitleSecondary0 = "By Richard Brandt"
+const entryDescription0 = "The extraordinary and inspiring account of both the professional and personal life of Steve Jobs. Based on three years of exclusive interviews conducted by Isaacson with both Jobs and his family, colleagues and competitors. A great insight into Jobs’s life and thoughts making it a very motivational and inspirational read, one of the best inspirational biographies out there."
+const entryImage0 = "/images/articles/oneclick.png"
 
 // Related
 const articleAuthorLink = "/profile/profile"
@@ -47,25 +51,16 @@ const relatedTitle = "10 Inspirational Biographies That Can Steer You Towards Th
 const likes = 100
 const comments = 20
 
-// Comments 
-const commentAuthorLink = "/profile/profile"
-const commentAuthorProfileImage = "/images/profile.jpeg"
-const commentAuthorName = "Jacob Lundell"
-const commentTime = "5h"
-const commentText = "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work."
-const commentLikes = "120"
-const commentReplies = "20"
-
 
 export default function List() {
   return (
     <div>
       <Head>
-        <title>{title} | {category} | Topping</title>
+        <title>{articleTitle} | {category} | Topping</title>
       </Head>
 
       <ListNavigation 
-        // lägg till thumbnails
+        // lägg till argument för thumbnails
       />
 
       <div className={styles.layout}>
@@ -85,7 +80,7 @@ export default function List() {
               />
               <meta
                 itemProp="image"
-                content={wallpaper}
+                content={articleWallpaper}
               />
               <meta 
                 itemProp="publisher"
@@ -105,21 +100,26 @@ export default function List() {
               />
 
               <ListHeader 
-                title={title}
-                description={description}
-                wallpaper={wallpaper}
-                wallpaperCaption={wallpaperCaption}
+                title={articleTitle}
+                description={articleDescription}
+                wallpaper={articleWallpaper}
+                wallpaperCaption={articleWallpaperCaption}
               />
 
               {/* Ska inte vara "ItemListOrderDescending" för guider, bara numeriska topplistor */}
               <link property="itemListOrder" href="https://schema.org/ItemListOrderDescending" />
 
-              <ListParagraph 
-                text={text0}
+              <ListParagraph content={articleParagraph0} />
+
+              <ListEntry 
+                titleMain={entryTitleMain0}
+                titleSecondary={entryTitleSecondary0}
+                description={entryDescription0}
+                image={entryImage0}
               />
 
               {/* ListEntry   */}
-                <section className={styles.entry}>
+                {/* <section className={styles.entry}>
                   <span property="itemListElement">
                     <div className={styles.number}>1</div>
                     <div className={styles.wallpaper}>
@@ -135,7 +135,7 @@ export default function List() {
                       {text1}
                     </p>
                   </span>
-                </section>
+                </section> */}
 
             </article>
           </main>
