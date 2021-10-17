@@ -9,7 +9,8 @@ export default function ListEntry({
   return (
     <section className={styles.entry}>
       <span property="itemListElement">
-        <div className={styles.image}>
+        
+        <div className={styles.mainImage}>
           <img
             src={image}
             draggable="false"

@@ -2,6 +2,7 @@
 
 .image {
   float: left;
+  margin-bottom: 50px;
 }
 
 .image img  {
@@ -16,9 +17,9 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 26px;
   color: $caption-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 1em;
+  margin: 20px 0 -10px 0;
 }

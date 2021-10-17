@@ -12,6 +12,7 @@ import RelatedArticleCard from '../../components/cards/relatedArticleCard'
 import AdvertisementCard from '../../components/cards/advertisementCard'
 import InfoCard from '../../components/cards/infoCard'
 import CommentCard from '../../components/cards/commentCard'
+import RelatedArticles from '../../components/list/relatedArticles'
 
 // Meta data
 const datePublished = "2021-01-05 09:31:10 -0700 -0700"
@@ -153,33 +154,7 @@ export default function List() {
           </div>
 
           <div className={styles.relatedArticles}>
-            <RelatedArticleCard
-              authorImage={articleAuthorProfileImage}
-              authorName={articleAuthorName}
-              authorLink={articleAuthorLink}
-              images={images}
-              title={relatedTitle}
-              likes={likes}
-              comments={comments}
-            />
-            <RelatedArticleCard
-              authorImage={articleAuthorProfileImage}
-              authorName={articleAuthorName}
-              authorLink={articleAuthorLink}
-              images={images}
-              title={relatedTitle}
-              likes={likes}
-              comments={comments}
-            />
-            <RelatedArticleCard
-              authorImage={articleAuthorProfileImage}
-              authorName={articleAuthorName}
-              authorLink={articleAuthorLink}
-              images={images}
-              title={relatedTitle}
-              likes={likes}
-              comments={comments}
-            />
+            <RelatedArticles />
           </div>
 
           {/* <section className={styles.comments}>

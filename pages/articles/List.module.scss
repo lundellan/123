@@ -131,13 +131,6 @@
 
 .relatedArticles {
   float: left;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  padding-top: 30px;
-  margin-top: -30px;
-  height: 100vh;
   width: calc(100% + 2 * #{$grid-horizontal-margin});
   margin-left: -#{$grid-horizontal-margin};
-  overflow-y: scroll;
 }

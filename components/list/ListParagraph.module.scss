@@ -1,14 +1,19 @@
 @import "../../styles/vars/colors.scss";
 
+.paragraph  {
+  float: left;
+  margin-bottom: 35px;
+}
+
 .paragraph p  {
   float: left;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 26px;
   color: $list-text;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0 0 25px 0;
+  margin: 0 0 15px 0;
 }

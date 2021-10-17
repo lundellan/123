@@ -5,6 +5,57 @@
 .entry  {
   float: left;
   width: 100%;
-  background-color: #572B1F; // Gör bakgrundsfärg dynamisk
+  background-color: rgba(11, 10, 9, .95); // Gör bakgrundsfärg dynamisk
   border-radius: 30px;
 }
+
+.entry h3, .entry h4, .entry p  {
+  font-family: Inter;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.entry h3, .entry h4  {
+  font-weight: 600;
+}
+
+.entry h3  {
+  font-size: 42px;
+  line-height: 51px;
+  color: #FFF;
+  margin: 30px 0 0 30px;
+}
+
+.entry h4  {
+  font-size: 28px;
+  line-height: 34px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 4px 0 0 30px;
+}
+
+.entry p  {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(250, 250, 250, 0.8);
+  margin: 25px 0 0 30px;
+}
+
+.mainImage  {
+  float: right;
+  height: 300px;
+  width: 300px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.mainImage img  {
+  max-height: 250px;
+  max-width: 250px;
+}
+

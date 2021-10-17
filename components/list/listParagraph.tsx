@@ -6,6 +6,7 @@ export default function ListParagraph({
   return (
     <div className={styles.paragraph}>
       <p>{content}</p>
+      {/* <p>{content}</p> */}
     </div>
   )
 }
